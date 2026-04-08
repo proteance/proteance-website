@@ -689,6 +689,100 @@ body {
 .cta-band__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 /* ============================================
+   CONTACT FORM
+   ============================================ */
+.contact {
+    padding: 100px 0;
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.contact__grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: start;
+}
+
+.contact__heading {
+    font-family: var(--font-display);
+    font-size: 1.4rem; font-weight: 700;
+    color: var(--white); margin-bottom: 16px;
+}
+
+.contact__text {
+    font-size: 1rem; line-height: 1.75;
+    color: var(--text-secondary); margin-bottom: 32px;
+}
+
+.contact__detail {
+    display: flex; flex-direction: column; gap: 4px;
+}
+
+.contact__detail strong {
+    font-size: 0.9rem; color: var(--white);
+}
+
+.contact__detail a {
+    color: var(--amber); text-decoration: none;
+    font-size: 0.95rem; font-weight: 500;
+    transition: color 0.2s ease;
+}
+.contact__detail a:hover { color: var(--amber-bright); }
+
+.contact__field {
+    margin-bottom: 16px;
+}
+
+.contact__field input,
+.contact__field textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--gray-800);
+    border-radius: 8px;
+    background: var(--navy-light);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+    color: var(--gray-500);
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+    outline: none;
+    border-color: var(--amber);
+    box-shadow: 0 0 0 3px var(--amber-dim);
+}
+
+.contact__field textarea {
+    resize: vertical;
+}
+
+/* Form success/error messages from script.js */
+.form-message {
+    margin-top: 16px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-message.success {
+    background: var(--green-dim);
+    color: var(--green);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.form-message.error {
+    background: var(--rose-dim);
+    color: var(--rose);
+    border: 1px solid rgba(244, 63, 94, 0.25);
+}
+
+/* ============================================
    FOOTER
    ============================================ */
 .footer {
@@ -775,7 +869,8 @@ body {
     .how__steps::before { display: none; }
 
     .why__grid,
-    .integrations__grid { grid-template-columns: 1fr; gap: 40px; }
+    .integrations__grid,
+    .contact__grid { grid-template-columns: 1fr; gap: 40px; }
     .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 

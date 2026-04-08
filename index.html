@@ -305,20 +305,41 @@
     </section>
 
     <!-- ============================================
-         CTA
+         CONTACT / DEMO REQUEST
          ============================================ -->
-    <section class="cta-band" id="contact">
+    <section class="contact" id="contact">
         <div class="section__inner">
-            <h2 class="cta-band__title reveal">See Path in a real dealership workflow.</h2>
-            <p class="cta-band__sub reveal reveal-delay-1">Review how Path can reduce chasing and bring more control to delivery readiness in your current process.</p>
-            <div class="cta-band__actions reveal reveal-delay-2">
-                <a href="mailto:info@proteance.com" class="btn--primary">
-                    <i class="fa-solid fa-envelope" style="font-size:0.8rem"></i>
-                    Request a Demo
-                </a>
-                <a href="#how-it-works" class="btn--ghost">
-                    See How It Works
-                </a>
+            <div class="section__header">
+                <span class="section__eyebrow">Next step</span>
+                <h2 class="section__title reveal">See Path in a real dealership workflow.</h2>
+                <p class="section__subtitle reveal reveal-delay-1">Tell us about your delivery process and we'll show you how Path fits.</p>
+            </div>
+            <div class="contact__grid reveal reveal-delay-2">
+                <div class="contact__info">
+                    <h3 class="contact__heading">Request a Demo</h3>
+                    <p class="contact__text">Whether you're managing 20 deliveries a month or 200 — Path adapts to your process. Fill in the form and we'll walk you through a real workflow.</p>
+                    <div class="contact__detail">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@proteance.com">info@proteance.com</a>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <form id="contactForm">
+                        <div class="contact__field">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="contact__field">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="contact__field">
+                            <input type="text" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="contact__field">
+                            <textarea name="message" rows="4" placeholder="Tell us about your delivery process" required></textarea>
+                        </div>
+                        <button type="submit" class="btn--primary" style="width:100%; justify-content:center;">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -356,6 +377,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
     <script>
     // Sticky nav
     const nav = document.getElementById('nav');
