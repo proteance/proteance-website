@@ -34,23 +34,23 @@
             transform: translateY(-5px);
             box-shadow: 0 16px 40px rgba(0,0,0,0.3);
         }
-        .product-card-core .product-logo {
-            height: 56px;
+        .product-logo-row {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            gap: 12px;
+            margin-bottom: 14px;
         }
-        .product-card-core .product-logo img {
-            max-height: 48px;
+        .product-logo-row img {
+            height: 40px;
             width: auto;
-            max-width: 160px;
+            max-width: 120px;
             object-fit: contain;
         }
-        .product-card-core h3 {
+        .product-logo-row h3 {
             font-size: 1.15rem;
             font-weight: 700;
             color: var(--text-dark);
-            margin-bottom: 6px;
+            margin: 0;
         }
         .product-card-core .product-tagline {
             font-size: 0.8rem;
@@ -233,10 +233,10 @@
             <div class="products-core">
 
                 <div class="product-card-core">
-                    <div class="product-logo">
-                        <img src="WebsiteImages/DIBOP-LogoOnly.png" alt="DIBOP">
+                    <div class="product-logo-row">
+                        <img src="WebsiteImages/DIBOP-WhiteTransparent.png" alt="DIBOP">
+                        <h3>DIBOP</h3>
                     </div>
-                    <h3>DIBOP</h3>
                     <p class="product-tagline">Dealer Integration Backbone &amp; Orchestration Platform</p>
                     <p class="product-description">The integration spine that sits between your OEM APIs, DMS, CRM, and finance systems. Connect each system once — data moves automatically, business logic lives in one place, and your team stops re-entering what should sync itself.</p>
                     <a href="dibop.html" class="btn btn-primary">Learn More</a>
@@ -244,20 +244,20 @@
 
 
 <div class="product-card-core">
-                    <div class="product-logo">
-                        <img src="WebsiteImages/Proteance-WinLoss-LogoOnly.png" alt="Proteance Win-Loss">
+                    <div class="product-logo-row">
+                        <img src="WebsiteImages/Proteance-WinLoss-LogoWhiteTransparent.png" alt="Proteance Win-Loss">
+                        <h3>Win–Loss</h3>
                     </div>
-                    <h3>Proteance Win–Loss</h3>
                     <p class="product-tagline">Deal Intelligence for Automotive Retail</p>
                     <p class="product-description">Structured surveys, a built-in gamification points system, and AI-assisted analysis that tells you exactly why customers bought — or walked away. Two survey types: Vehicle Purchase win-back and Service Experience retention.</p>
                     <a href="winloss.html" class="btn btn-primary">Learn More</a>
                 </div>
 
                 <div class="product-card-core">
-                    <div class="product-logo">
+                    <div class="product-logo-row">
                         <img src="WebsiteImages/ProPath-LogoWhite-Blue.png" alt="ProPath">
+                        <h3>ProPath</h3>
                     </div>
-                    <h3>ProPath</h3>
                     <p class="product-tagline">Deal to Delivery Control</p>
                     <p class="product-description">One view of delivery readiness, blockers, ownership, and next actions for every sold unit. Built for sales, F&amp;I, prep, and delivery teams — designed to reduce delivery-day surprises.</p>
                     <a href="propath/" class="btn btn-primary">Learn More</a>
