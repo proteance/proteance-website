@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteance Path — Deal to Delivery Control for Dealerships</title>
+    <meta name="description" content="Proteance Path gives dealerships one view of delivery readiness, blockers, ownership, and next actions for every sold unit.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="propath.css">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="../index.html" class="nav__logo">
+                <img src="../WebsiteImages/P-Ray-Logo-POnly-transparent-v2.png" alt="Proteance Logo">
+                <span class="nav__logo-name">Proteance</span>
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="../index.html#products">Products</a></li>
+                <li><a href="#readiness">What Path controls</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#integrations">Your systems</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../index.html#contact" class="nav__cta">Book a Demo</a></li>
+            </ul>
+            <button class="nav__toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero__inner">
+
+            <!-- Left: Copy -->
+            <div class="hero__copy">
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    Delivery Readiness Platform
+                </div>
+                <h1 class="hero__title">
+                    Control the<br>
+                    <em>Deal to Delivery</em> process
+                </h1>
+                <p class="hero__subtitle">
+                    Path gives dealerships one view of delivery readiness, blockers, ownership, and next actions for every sold unit. No more chasing. No more delivery-day surprises.
+                </p>
+                <div class="hero__actions">
+                    <a href="../index.html#contact" class="btn--primary">
+                        <i class="fa-solid fa-play" style="font-size:0.75rem"></i>
+                        Request a Demo
+                    </a>
+                    <a href="#how-it-works" class="btn--ghost">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Status Panel -->
+            <div class="hero__panel-wrapper">
+                <div class="hero__panel">
+                    <div class="hero__status-header">
+                        <div>
+                            <p class="hero__status-kicker">Release status</p>
+                            <h3>Not ready for release</h3>
+                            <p class="hero__status-sub">2 blockers remain before handover</p>
+                        </div>
+                        <span class="hero__status-pill">2 blockers</span>
+                    </div>
+
+                    <div class="hero__readiness-list">
+                        <div class="hero__readiness-item">
+                            <div class="hero__readiness-left">
+                                <div class="hero__icon-box"><i class="fa-solid fa-file-lines"></i></div>
+                                <div>
+                                    <h4>Paperwork and funding</h4>
+                                    <p>Lender stipulation outstanding</p>
+                                </div>
+                            </div>
+                            <span class="readiness-tag readiness-tag--blocked">Blocked</span>
+                        </div>
+
+                        <div class="hero__readiness-item">
+                            <div class="hero__readiness-left">
+                                <div class="hero__icon-box"><i class="fa-solid fa-clipboard-check"></i></div>
+                                <div>
+                                    <h4>Registration and plates</h4>
+                                    <p>Application submitted, proof pending</p>
+                                </div>
+                            </div>
+                            <span class="readiness-tag readiness-tag--open">Open</span>
+                        </div>
+
+                        <div class="hero__readiness-item">
+                            <div class="hero__readiness-left">
+                                <div class="hero__icon-box"><i class="fa-solid fa-car"></i></div>
+                                <div>
+                                    <h4>Vehicle readiness</h4>
+                                    <p>PDI complete and vehicle on site</p>
+                                </div>
+                            </div>
+                            <span class="readiness-tag readiness-tag--good">Ready</span>
+                        </div>
+
+                        <div class="hero__readiness-item">
+                            <div class="hero__readiness-left">
+                                <div class="hero__icon-box"><i class="fa-solid fa-user"></i></div>
+                                <div>
+                                    <h4>Customer ready</h4>
+                                    <p>Insurance still needed</p>
+                                </div>
+                            </div>
+                            <span class="readiness-tag readiness-tag--waiting">Waiting</span>
+                        </div>
+
+                        <div class="hero__readiness-item">
+                            <div class="hero__readiness-left">
+                                <div class="hero__icon-box"><i class="fa-solid fa-gift"></i></div>
+                                <div>
+                                    <h4>Accessories and promises</h4>
+                                    <p>Tint booking still open</p>
+                                </div>
+                            </div>
+                            <span class="readiness-tag readiness-tag--open">Open</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHAT PATH CONTROLS
+         ============================================ -->
+    <section class="controls" id="readiness">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow">What Path controls</span>
+                <h2 class="section__title reveal">Complete visibility and control over every vehicle in delivery.</h2>
+                <p class="section__subtitle reveal reveal-delay-1">Keep every delivery task, dependency, and decision aligned to your process.</p>
+            </div>
+            <div class="controls__grid">
+                <div class="control-card reveal reveal-delay-1">
+                    <div class="control-card__icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3 class="control-card__title">Paperwork and funding</h3>
+                    <p class="control-card__body">Signed documents, cleared funding, and lender conditions complete.</p>
+                </div>
+                <div class="control-card reveal reveal-delay-1">
+                    <div class="control-card__icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h3 class="control-card__title">Registration and plates</h3>
+                    <p class="control-card__body">Registration steps, plates, and proof items visible.</p>
+                </div>
+                <div class="control-card reveal reveal-delay-2">
+                    <div class="control-card__icon"><i class="fa-solid fa-car"></i></div>
+                    <h3 class="control-card__title">Vehicle readiness</h3>
+                    <p class="control-card__body">PDI, prep, and vehicle-on-site status tracked.</p>
+                </div>
+                <div class="control-card reveal reveal-delay-2">
+                    <div class="control-card__icon"><i class="fa-solid fa-user"></i></div>
+                    <h3 class="control-card__title">Customer ready</h3>
+                    <p class="control-card__body">Insurance, appointment, and customer dependencies confirmed.</p>
+                </div>
+                <div class="control-card reveal reveal-delay-3">
+                    <div class="control-card__icon"><i class="fa-solid fa-gift"></i></div>
+                    <h3 class="control-card__title">Accessories and promises</h3>
+                    <p class="control-card__body">Promised items, due bills, and accessory work tracked.</p>
+                </div>
+                <div class="control-card reveal reveal-delay-3">
+                    <div class="control-card__icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <h3 class="control-card__title">Release sign-off</h3>
+                    <p class="control-card__body">Final release decisions supported by clear status and blockers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         HOW IT WORKS
+         ============================================ -->
+    <section class="how" id="how-it-works">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow">How Path works</span>
+                <h2 class="section__title reveal">One delivery readiness view. Clear blockers. Controlled release.</h2>
+                <p class="section__subtitle reveal reveal-delay-1">Path brings delivery readiness into one view so teams can act earlier and hand over more reliably.</p>
+            </div>
+            <div class="how__steps">
+                <div class="step reveal reveal-delay-1">
+                    <div class="step__icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3 class="step__title">Delivery readiness view</h3>
+                    <p class="step__body">See what is ready, open, waiting, or blocked for each sold vehicle.</p>
+                </div>
+                <div class="step reveal reveal-delay-2">
+                    <div class="step__icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="step__title">Blockers with owners</h3>
+                    <p class="step__body">Make the next action clear so teams know what is open and who owns it.</p>
+                </div>
+                <div class="step reveal reveal-delay-3">
+                    <div class="step__icon"><i class="fa-solid fa-link"></i></div>
+                    <h3 class="step__title">Release sign-off with evidence</h3>
+                    <p class="step__body">Support a controlled handover decision instead of last-minute chasing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY IT MATTERS
+         ============================================ -->
+    <section class="why" id="why-it-matters">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow">Why it matters</span>
+                <h2 class="section__title reveal">Fewer reschedules. Fewer surprises. Better handovers.</h2>
+                <p class="section__subtitle reveal reveal-delay-1">When readiness is scattered across teams, deliveries slip. Path reduces chasing and makes handover risk visible earlier.</p>
+            </div>
+            <div class="why__grid">
+                <ul class="why__checklist reveal reveal-delay-1">
+                    <li><i class="fa-solid fa-check"></i> Reduce delivery-day surprises</li>
+                    <li><i class="fa-solid fa-check"></i> Cut internal chasing and status checking</li>
+                    <li><i class="fa-solid fa-check"></i> Make ownership clearer across teams</li>
+                    <li><i class="fa-solid fa-check"></i> Support better handover decisions</li>
+                </ul>
+                <div class="why__cards">
+                    <div class="why-card reveal reveal-delay-2">
+                        <div class="why-card__icon"><i class="fa-solid fa-clock"></i></div>
+                        <h3 class="why-card__title">Fewer delivery-day issues</h3>
+                        <p class="why-card__body">Catch open items before the customer arrives.</p>
+                    </div>
+                    <div class="why-card reveal reveal-delay-2">
+                        <div class="why-card__icon"><i class="fa-solid fa-map-pin"></i></div>
+                        <h3 class="why-card__title">Clearer operational ownership</h3>
+                        <p class="why-card__body">Show who owns the next step and what still needs attention.</p>
+                    </div>
+                    <div class="why-card reveal reveal-delay-3">
+                        <div class="why-card__icon"><i class="fa-solid fa-building"></i></div>
+                        <h3 class="why-card__title">Better cross-team visibility</h3>
+                        <p class="why-card__body">Keep delivery-critical status in one place across departments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WORKS WITH YOUR SYSTEMS
+         ============================================ -->
+    <section class="integrations" id="integrations">
+        <div class="section__inner">
+            <div class="section__header">
+                <span class="section__eyebrow">Works with your systems</span>
+                <h2 class="section__title reveal">Fits around the way your dealership already works.</h2>
+                <p class="section__subtitle reveal reveal-delay-1">You do not need a big integration project to get value from Path. Start with one clear delivery process, then connect more systems over time as it makes sense.</p>
+            </div>
+            <div class="integrations__cards">
+                <div class="integration-card integration-card--accent reveal reveal-delay-1">
+                    <span class="integration-card__kicker">Start fast</span>
+                    <h3 class="integration-card__title">No big reset required</h3>
+                    <p class="integration-card__body">Use Path as the shared delivery control point without waiting for every system to be connected first.</p>
+                </div>
+                <div class="integration-card reveal reveal-delay-2">
+                    <span class="integration-card__kicker">Fit around your stack</span>
+                    <h3 class="integration-card__title">Work with the tools you already use</h3>
+                    <p class="integration-card__body">CRM, DMS, workshop, registration, and admin processes can stay in place while Path brings the flow together.</p>
+                </div>
+                <div class="integration-card reveal reveal-delay-3">
+                    <span class="integration-card__kicker">Improve over time</span>
+                    <h3 class="integration-card__title">Add more connected signals as you go</h3>
+                    <p class="integration-card__body">As more data comes in automatically, teams spend less time chasing updates and more time moving deliveries forward.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA
+         ============================================ -->
+    <section class="cta-band" id="contact">
+        <div class="section__inner">
+            <h2 class="cta-band__title reveal">See Path in a real dealership workflow.</h2>
+            <p class="cta-band__sub reveal reveal-delay-1">Review how Path can reduce chasing and bring more control to delivery readiness in your current process.</p>
+            <div class="cta-band__actions reveal reveal-delay-2">
+                <a href="../index.html#contact" class="btn--primary">
+                    <i class="fa-solid fa-envelope" style="font-size:0.8rem"></i>
+                    Request a Demo
+                </a>
+                <a href="#how-it-works" class="btn--ghost">
+                    See How It Works
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div>
+                    <a href="../index.html" class="footer__brand-logo">
+                        <img src="../WebsiteImages/P-Ray-Logo-POnly-transparent-v2.png" alt="Proteance">
+                        <span class="footer__brand-name">Proteance</span>
+                    </a>
+                    <p class="footer__tagline">Delivery readiness and release control for dealership operations.</p>
+                </div>
+                <div>
+                    <p class="footer__col-title">Quick Links</p>
+                    <ul class="footer__links">
+                        <li><a href="#readiness">What Path controls</a></li>
+                        <li><a href="#how-it-works">How it works</a></li>
+                        <li><a href="#integrations">Your systems</a></li>
+                        <li><a href="../index.html#products">All Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__col-title">Contact</p>
+                    <a href="mailto:info@proteance.com" class="footer__contact-email">info@proteance.com</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 Proteance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Sticky nav
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Mobile nav
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        mobileToggle.querySelector('i').className = isOpen ? 'fa fa-xmark' : 'fa fa-bars';
+        mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            mobileToggle.querySelector('i').className = 'fa fa-bars';
+            mobileToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
+            const target = document.querySelector(href);
+            if (!target) return;
+            e.preventDefault();
+            const navHeight = nav.offsetHeight;
+            const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+            window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        });
+    });
+    </script>
+</body>
+</html>
