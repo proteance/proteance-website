@@ -475,11 +475,34 @@ body {
 }
 
 /* ============================================
+   PRODUCT PREVIEW
+   ============================================ */
+.preview {
+    padding: 80px 0;
+    background: var(--navy);
+    border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.preview__frame {
+    overflow: hidden;
+    border: 1px solid var(--gray-800);
+    border-radius: 20px;
+    background: var(--navy-light);
+    box-shadow: 0 26px 64px rgba(0, 0, 0, 0.4);
+}
+
+.preview__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ============================================
    WHY IT MATTERS
    ============================================ */
 .why {
     padding: 100px 0;
-    background: var(--navy);
+    background: var(--midnight);
     border-top: 1px solid rgba(255,255,255,0.04);
 }
 
@@ -488,9 +511,30 @@ body {
     gap: 60px; align-items: start;
 }
 
+.why__left {
+    padding-top: 8px;
+}
+
+.why__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700; color: var(--white);
+    line-height: 1.2; letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+.why__title em {
+    font-style: normal; color: var(--amber);
+}
+
+.why__text {
+    font-size: 1rem; line-height: 1.75;
+    color: var(--text-secondary); margin-bottom: 32px;
+    max-width: 440px;
+}
+
 .why__checklist {
     list-style: none; display: flex; flex-direction: column; gap: 18px;
-    padding-top: 16px;
 }
 
 .why__checklist li {
@@ -545,13 +589,32 @@ body {
    ============================================ */
 .integrations {
     padding: 100px 0;
-    background: var(--midnight);
+    background: var(--navy);
     border-top: 1px solid rgba(255,255,255,0.04);
 }
 
+.integrations__grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center;
+}
+
+.integrations__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    font-weight: 700; color: var(--white);
+    line-height: 1.25; letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.integrations__text {
+    font-size: 1rem; line-height: 1.75;
+    color: var(--text-secondary);
+    max-width: 440px;
+}
+
 .integrations__cards {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    display: flex; flex-direction: column;
+    gap: 16px;
 }
 
 .integration-card {
@@ -704,12 +767,12 @@ body {
     .hero__panel-wrapper { max-width: 480px; margin: 0 auto; }
 
     .controls__grid,
-    .how__steps,
-    .integrations__cards { grid-template-columns: 1fr 1fr; }
+    .how__steps { grid-template-columns: 1fr 1fr; }
 
     .how__steps::before { display: none; }
 
-    .why__grid { grid-template-columns: 1fr; gap: 40px; }
+    .why__grid,
+    .integrations__grid { grid-template-columns: 1fr; gap: 40px; }
     .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 
@@ -732,8 +795,7 @@ body {
     .section__inner { padding: 0 20px; }
 
     .controls__grid,
-    .how__steps,
-    .integrations__cards { grid-template-columns: 1fr; }
+    .how__steps { grid-template-columns: 1fr; }
 
     .footer__grid { grid-template-columns: 1fr; gap: 32px; }
     .footer__inner { padding: 0 20px; }
